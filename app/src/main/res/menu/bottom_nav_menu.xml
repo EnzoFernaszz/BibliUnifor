@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/house_icon"
+        android:title="Início" />
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/calendar_icon"
+        android:title="Calendário" />
+
+    <item
+        android:id="@+id/nav_book"
+        android:icon="@drawable/books_icon"
+        android:title="Livro" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat_icon"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/person_icon"
+        android:title="Perfil" />
+
+</menu>
