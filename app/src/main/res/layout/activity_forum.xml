@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Fórum"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/Search"
+        app:layout_constraintBottom_toBottomOf="@+id/textMainTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMainTitle" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMainTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="24dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="45dp"
+                    android:layout_height="46dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_borda_arredondada"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:background="@drawable/bg_borda_arredondada">
+
+                <ImageView
+                    android:id="@+id/imgBook1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/unifor_icon_forum" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Odisseia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgBook1"
+                    app:layout_constraintTop_toTopOf="@+id/imgBook1" />
+
+                <ImageView
+                    android:id="@+id/iconUser1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBookTitle1"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/txtPeopleCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="59"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iconUser1"
+                    app:layout_constraintStart_toEndOf="@+id/iconUser1"
+                    app:layout_constraintTop_toTopOf="@+id/iconUser1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="@null"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

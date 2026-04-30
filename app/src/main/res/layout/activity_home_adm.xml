@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notícias"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Notícias da semana" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:translationX="260px"
+                    app:srcCompat="@drawable/mais_icon" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#99Aaff"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgLogoUnifor"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/logounifor"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtUniforTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unifor"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toTopOf="@id/imgLogoUnifor"
+                        app:layout_constraintStart_toEndOf="@id/imgLogoUnifor" />
+
+                    <TextView
+                        android:id="@+id/txtAtividade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atividade Cultural"
+                        android:textColor="#333333"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/txtUniforTitle"
+                        app:layout_constraintStart_toEndOf="@id/imgLogoUnifor" />
+
+                    <ImageView
+                        android:id="@+id/imgMainNews"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/raquel_de_queiroz_img"
+                        app:layout_constraintTop_toBottomOf="@id/imgLogoUnifor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtNewsTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Coleção Rachel de Queiroz"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toBottomOf="@id/imgMainNews"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtNewsDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="A Biblioteca Central da Universidade de Fortaleza (Unifor) abriga grande parte do acervo bibliográfico da escritora cearense Rachel de Queiroz... (Ler mais)"
+                        android:textColor="#333333"
+                        app:layout_constraintTop_toBottomOf="@id/txtNewsTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtNewsData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Data: 25 de março de 2026\nLocal: Biblioteca Central da Unifor"
+                        android:textColor="#555555"
+                        app:layout_constraintTop_toBottomOf="@id/txtNewsDescription"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/left_arrow"
+                        app:layout_constraintTop_toBottomOf="@id/txtNewsData"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgDots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"
+                        android:src="@drawable/three_points"
+                        app:layout_constraintTop_toTopOf="@id/imgBack"
+                        app:layout_constraintBottom_toBottomOf="@id/imgBack"
+                        app:layout_constraintStart_toEndOf="@id/imgBack"
+                        app:layout_constraintEnd_toStartOf="@id/imgForward" />
+
+                    <ImageView
+                        android:id="@+id/imgForward"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/right_arrrow"
+                        app:layout_constraintTop_toBottomOf="@id/txtNewsData"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notícias anteriores"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Novos Livros na Biblioteca da Unifor!"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data: 25 de março de 2026"
+                        android:textColor="#555555"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Local: Biblioteca Central da Unifor"
+                        android:textColor="#555555"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/news_icon"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- You will need to create a menu.xml file in the res/menu folder to populate this -->
+    <!-- FIXED BOTTOM MENU -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
